@@ -1,24 +1,25 @@
-const commands = [];
+var commands = [];
 
-/**
- * Register a command with pattern and function
- * @param {Object} info - Command metadata
- * @param {Function} func - Command handler function
- */
 function cmd(info, func) {
-    commands.push({
-        pattern: info.pattern,
-        alias: info.alias || [],
-        use: info.use || '',
-        desc: info.desc || '',
-        category: info.category || 'general',
-        react: info.react || '',
-        filename: info.filename || '',
-        function: func
-    });
+    var data = info;
+    data.function = func;
+    if (!data.dontAddCommandList) data.dontAddCommandList = false;
+    if (!info.desc) info.desc = '';
+    if (!data.fromMe) data.fromMe = false;
+    if (!info.category) data.category = 'misc';
+    if(!info.filename) data.filename = "Not Provided";
+    commands.push(data);
+    return data;
 }
-
 module.exports = {
+    cmd,
+    AddCommand:cmd,
+    Function:cmd,
+    Module:cmd,
     commands,
-    cmd
+
 };
+
+
+
+//COMMNAD
