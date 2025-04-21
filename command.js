@@ -1,20 +1,28 @@
-var commands = [];
+conn.ev.on('messages.upsert', async ({ messages }) => {
+    const m = messages[0];
+    if (!m.message) return;
 
-function cmd(info, func) {
-    var data = info;
-    data.function = func;
-    if (!data.dontAddCommandList) data.dontAddCommandList = false;
-    if (!info.desc) info.desc = '';
-    if (!data.fromMe) data.fromMe = false;
-    if (!info.category) data.category = 'misc';
-    if(!info.filename) data.filename = "Not Provided";
-    commands.push(data);
-    return data;
-}
-module.exports = {
-    cmd,
-    AddCommand:cmd,
-    Function:cmd,
-    Module:cmd,
-    commands,
-};
+    const text =
+        m.message?.conversation ||
+        m.message?.extendedTextMessage?.text ||
+        m.message?.imageMessage?.caption ||
+        m.message?.videoMessage?.caption;
+
+    if (!text) return;
+
+    for (let cmd of commands) {
+        const regex = new RegExp("^" + cmd.pattern, "i");
+        if (regex.test(text)) {
+            try {
+                await cmd.function(conn, m, m, {
+                    from: m.key.remoteJid,
+                    body: text,
+                    quoted: m.message?.extendedTextMessage?.contextInfo?.quotedMessage,
+                    reply: (msg) => conn.sendMessage(m.key.remoteJid, { text: msg }, { quoted: m })
+                });
+            } catch (e) {
+                console.error("Command error:", e);
+            }
+        }
+    }
+});
