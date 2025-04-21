@@ -1,3 +1,5 @@
+const { commands } = require('./command');
+
 conn.ev.on('messages.upsert', async ({ messages }) => {
     const m = messages[0];
     if (!m.message) return;
