@@ -1,4 +1,106 @@
-const fs = require('fs'); // <-- මෙය එකතු කරන්න
+const const fs = require('fs');
+const P = require('pino');
+const config = require('./config');
+const qrcode = require('qrcode-terminal');
+const StickersTypes = require('wa-sticker-formatter');
+const util = require('util');
+const { sms, downloadMediaMessage, AntiDelete } = require('./lib');
+const FileType = require('file-type');
+const axios = require('axios');
+const { File } = require('megajs');
+const { fromBuffer } = require('file-type');
+const bodyparser = require('body-parser');
+const os = require('os');
+const Crypto = require('crypto');
+const path = require('path');
+const prefix = config.PREFIX;
+
+const {
+  useMultiFileAuthState,
+  DisconnectReason,
+  jidNormalizedUser,
+  isJidBroadcast,
+  getContentType,
+  proto,
+  generateWAMessageContent,
+  generateWAMessage,
+  AnyMessageContent,
+  prepareWAMessageMedia,
+  areJidsSameUser,
+  downloadContentFromMessage,
+  MessageRetryMap,
+  generateForwardMessageContent, // <-- FIX: now placed correctly
+  generateWAMessageFromContent,
+  generateMessageID,
+  makeInMemoryStore,
+  jidDecode,
+  fetchLatestBaileysVersion,
+  Browsers
+} = require('@whiskeysockets/baileys');
+  
+  const ownerNumber = ['923427582273']
+  
+  const tempDir = path.join(os.tmpdir(), 'cache-temp')
+  if (!fs.existsSync(tempDir)) {
+      fs.mkdirSync(tempDir)
+  }
+  
+  const clearTempDir = () => {
+      fs.readdir(tempDir, (err, files) => {
+          if (err) throw err;
+          for (const file of files) {
+              fs.unlink(path.join(tempDir, file), err => {
+                  if (err) throw err;
+              });
+          }
+      });
+  }
+  
+  // Clear the temp directory every 5 minutes
+  setInterval(clearTempDir, 5 * 60 * 1000);
+  
+  //===================SESSION-AUTH============================
+if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
+if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
+const sessdata = config.SESSION_ID.replace("NIMA-MD~", '');
+const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
+filer.download((err, data) => {
+if(err) throw err
+fs.writeFile(__dirname + '/sessions/creds.json', data, () => {
+console.log("Session downloaded ✅")
+})})}
+
+const express = require("express");
+const app = express();
+const port = process.env.PORT || 9090;
+  
+  //=============================================
+  
+  async function connectToWA() {
+  console.log("Connecting to Nima Md WhatsApp ⏳️...");
+  const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/sessions/')
+  var { version } = await fetchLatestBaileysVersion()
+  
+  const conn = makeWASocket({
+          logger: P({ level: 'silent' }),
+          printQRInTerminal: false,
+          browser: Browsers.macOS("Firefox"),
+          syncFullHistory: true,
+          auth: state,
+          version
+          })
+      
+  conn.ev.on('connection.update', (update) => {
+  const { connection, lastDisconnect } = update
+  if (connection === 'close') {
+  if (lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut) {
+  connectToWA()
+  }
+  } else if (connection === 'open') {
+  console.log('🧬 Installing Plugins')
+  const path = require('path');
+  fs.readdirSync("./plugins/").forEach((plugin) => {
+  if (path.extname(plugin).toLowerCase() == ".js") {const fs = require('fs'); // <-- මෙය එකතු කරන්න
 const P = require('pino');
     useMultiFileAuthState,
     DisconnectReason,
@@ -111,6 +213,7 @@ const port = process.env.PORT || 9090;
   const path = require('path');
   fs.readdirSync("./plugins/").forEach((plugin) => {
   if (path.extname(plugin).toLowerCase() == ".js") {
+
   require("./plugins/" + plugin);
   }
   });
