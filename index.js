@@ -13,7 +13,14 @@ const P = require('pino');
     areJidsSameUser,
     downloadContentFromMessage,
     MessageRetryMap,
-    generateForwardMessageContent,
+    // Add this at the top of your index.js
+const { generateForwardMessageContent } = require('@whiskeysockets/baileys');
+
+// Example of usage in the code
+const forwardMessage = (sock, message, jid) => {
+  const messageContent = generateForwardMessageContent(message, true);
+  sock.relayMessage(jid, messageContent.message, { messageId: message.key.id });
+};
     generateWAMessageFromContent,
     generateMessageID, makeInMemoryStore,
     jidDecode,
