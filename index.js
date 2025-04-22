@@ -1,53 +1,42 @@
-const fs = require('fs'); // <-- මෙය එකතු කරන්න
+const fs = require('fs');
 const P = require('pino');
-    useMultiFileAuthState,
-    DisconnectReason,
-    jidNormalizedUser,
-    isJidBroadcast,
-    getContentType,
-    proto,
-    generateWAMessageContent,
-    generateWAMessage,
-    AnyMessageContent,
-    prepareWAMessageMedia,
-    areJidsSameUser,
-    downloadContentFromMessage,
-    MessageRetryMap,
-    const { generateForwardMessageContent } = require('@whiskeysockets/baileys');
-// Example of usage in the code
-const forwardMessage = (sock, message, jid) => {
-  const messageContent = generateForwardMessageContent(message, true);
-  sock.relayMessage(jid, messageContent.message, { messageId: message.key.id });
-};
-    generateWAMessageFromContent,
-    generateMessageID, makeInMemoryStore,
-    jidDecode,
-    fetchLatestBaileysVersion,
-    Browsers
-  } = require('@whiskeysockets/baileys')
-  
-  
-  const l = console.log
-  const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson } = require('./lib/functions')
-  const { AntiDelDB, initializeAntiDeleteSettings, setAnti, getAnti, getAllAntiDeleteSettings, saveContact, loadMessage, getName, getChatSummary, saveGroupMetadata, getGroupMetadata, saveMessageCount, getInactiveGroupMembers, getGroupMembersMessageCount, saveMessage } = require('./data')
-  const fs = require('fs')
-  const ff = require('fluent-ffmpeg')
-  const P = require('pino')
-  const config = require('./config')
-  const qrcode = require('qrcode-terminal')
-  const StickersTypes = require('wa-sticker-formatter')
-  const util = require('util')
-  const { sms, downloadMediaMessage, AntiDelete } = require('./lib')
-  const FileType = require('file-type');
-  const axios = require('axios')
-  const { File } = require('megajs')
-  const { fromBuffer } = require('file-type')
-  const bodyparser = require('body-parser')
-  const os = require('os')
-  const Crypto = require('crypto')
-  const path = require('path')
-  const prefix = config.PREFIX
-  
+const config = require('./config');
+const qrcode = require('qrcode-terminal');
+const StickersTypes = require('wa-sticker-formatter');
+const util = require('util');
+const { sms, downloadMediaMessage, AntiDelete } = require('./lib');
+const FileType = require('file-type');
+const axios = require('axios');
+const { File } = require('megajs');
+const { fromBuffer } = require('file-type');
+const bodyparser = require('body-parser');
+const os = require('os');
+const Crypto = require('crypto');
+const path = require('path');
+const prefix = config.PREFIX;
+
+const {
+  useMultiFileAuthState,
+  DisconnectReason,
+  jidNormalizedUser,
+  isJidBroadcast,
+  getContentType,
+  proto,
+  generateWAMessageContent,
+  generateWAMessage,
+  AnyMessageContent,
+  prepareWAMessageMedia,
+  areJidsSameUser,
+  downloadContentFromMessage,
+  MessageRetryMap,
+  generateForwardMessageContent, // <-- FIX: now placed correctly
+  generateWAMessageFromContent,
+  generateMessageID,
+  makeInMemoryStore,
+  jidDecode,
+  fetchLatestBaileysVersion,
+  Browsers
+} = require('@whiskeysockets/baileys');
   const ownerNumber = ['923427582273']
   
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
