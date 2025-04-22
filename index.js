@@ -1,5 +1,5 @@
-const {
-  default: makeWASocket,
+const fs = require('fs'); // <-- මෙය එකතු කරන්න
+const P = require('pino');
     useMultiFileAuthState,
     DisconnectReason,
     jidNormalizedUser,
