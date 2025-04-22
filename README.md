@@ -37,22 +37,23 @@
 
 Start by forking this repository to your own GitHub account. Click the button below to fork:
 
-  <a href="https://github.com/XdTechPro/KHAN-MD/fork"><img title="KHAN-MD" src="https://img.shields.io/badge/FORK-KHAN MD-h?color=green&style=for-the-badge&logo=stackshare"></a>
+   <a href="https://github.com/XdTechPro/KHAN-MD/fork"><img title="KHAN-MD" src="https://img.shields.io/badge/FORK-KHAN MD-h?color=green&style=for-the-badge&logo=stackshare"></a>
+
 
 > Get Pair Code (Session ID)
 
 <p align="left">  
-<a href='https://khanmdx.onrender.com' target="_blank"><img alt='Get Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-000000?style=for-the-badge&logo=codefactor&logoColor=white'/></a>  
+<a href='https://nima-web-pair-2-2.onrender.com' target="_blank"><img alt='Get Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-000000?style=for-the-badge&logo=codefactor&logoColor=white'/></a>  
 </p>  
 
 > Get Pair Code (Session ID)
 
 <p align="left">  
-<a href='https://jawadmdx.onrender.com' target="_blank"><img alt='Get Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-ff0000?style=for-the-badge&logo=codefactor&logoColor=white'/></a>  
+<a href='https://nima-web-pair-2-2.onrender.com' target="_blank"><img alt='Get Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-ff0000?style=for-the-badge&logo=codefactor&logoColor=white'/></a>  
 </p>  
 
 
-🚀 Deploy KHAN-MD
+🚀 Deploy Nima-MD
 
 > Deploy on Heroku
 
