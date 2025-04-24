@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "pm2 start index.js --deep-monitoring --attach --name KHAN-MD",
-    "stop": "pm2 stop NIMA-MD",
+    "stop": "pm2 stop KHAN-MD",
     "restart": "pm2 restart NIMA-MD"
   },
   "dependencies": {
