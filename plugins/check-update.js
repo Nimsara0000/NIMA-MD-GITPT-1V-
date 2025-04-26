@@ -1,3 +1,7 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
 const axios = require('axios');
 const os = require('os');
 const fs = require('fs');
@@ -27,7 +31,7 @@ cmd({
     }
 
     // Fetch latest version data from GitHub
-    const rawVersionUrl = 'https://raw.githubusercontent.com/XdTechPro/KHAN-MD/main/data/version.json';
+    const rawVersionUrl = 'https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-/blob/main/data/version.json';
     let latestVersion = 'Unknown';
     let latestChangelog = 'No changelog available.';
     try {
@@ -53,12 +57,12 @@ cmd({
     const lastUpdate = fs.statSync(localVersionPath).mtime.toLocaleString();
 
     // GitHub stats
-    const githubRepo = 'https://github.com/XdTechPro/KHAN-MD';
+    const githubRepo = 'https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-';
 
     // Check update status
-    let updateMessage = `✅ Your KHAN-MD bot is up-to-date!`;
+    let updateMessage = `✅ Your NIMA-MD bot is up-to-date!`;
     if (localVersion !== latestVersion) {
-      updateMessage = `🚀 Your KHAN-MD bot is outdated!
+      updateMessage = `🚀 Your NIMA-MD bot is outdated!
 🔹 *Current Version:* ${localVersion}
 🔹 *Latest Version:* ${latestVersion}
 
@@ -66,22 +70,22 @@ Use *.update* to update.`;
     }
 
     const statusMessage = `🌟 *Good ${new Date().getHours() < 12 ? 'Morning' : 'Night'}, ${pushname}!* 🌟\n\n` +
-      `📌 *Bot Name:* KHAN-MD\n🔖 *Current Version:* ${localVersion}\n📢 *Latest Version:* ${latestVersion}\n📂 *Total Plugins:* ${pluginCount}\n🔢 *Total Commands:* ${totalCommands}\n\n` +
+      `📌 *Bot Name:* NIMA-MD\n🔖 *Current Version:* ${localVersion}\n📢 *Latest Version:* ${latestVersion}\n📂 *Total Plugins:* ${pluginCount}\n🔢 *Total Commands:* ${totalCommands}\n\n` +
       `💾 *System Info:*\n⏳ *Uptime:* ${uptime}\n📟 *RAM Usage:* ${ramUsage}MB / ${totalRam}MB\n⚙️ *Host Name:* ${hostName}\n📅 *Last Update:* ${lastUpdate}\n\n` +
       `📝 *Changelog:*\n${latestChangelog}\n\n` +
-      `⭐ *GitHub Repo:* ${githubRepo}\n👤 *Owner:* [JawadTechX](https://github.com/XdTechPro)\n\n${updateMessage}\n\n🚀 *Hey! Don't forget to fork & star the repo!*`;
+      `⭐ *GitHub Repo:* ${githubRepo}\n👤 *Owner:* [NIA MD](https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-)\n\n${updateMessage}\n\n🚀 *Hey! Don't forget to fork & star the repo!*`;
 
     // Send the status message with an image
     await conn.sendMessage(from, {
-      image: { url: 'https://files.catbox.moe/7zfdcq.jpg' },
+      image: { url: 'https://files.catbox.moe/60dfx8.jpg' },
       caption: statusMessage,
       contextInfo: {
         mentionedJid: [m.sender],
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363354023106228@newsletter',
-          newsletterName: 'JawadTechX',
+          newsletterJid: '120363357955960414@newsletter',
+          newsletterName: 'NIMA MD',
           serverMessageId: 143
         }
       }

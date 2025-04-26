@@ -1,3 +1,9 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
+
 const axios = require("axios");
 const { cmd } = require("../command");
 
@@ -31,7 +37,7 @@ cmd({
     const videoUrl = data.data.url;
     await conn.sendMessage(from, {
       video: { url: videoUrl },
-      caption: "📥 *Facebook Video Downloaded*\n\n- Powered By JawadTechX ✅",
+      caption: "📥 *Facebook Video Downloaded*\n\n- Powered By loku nima ✅",
     }, { quoted: m });
 
   } catch (error) {

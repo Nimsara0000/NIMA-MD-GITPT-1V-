@@ -1,3 +1,9 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
+
 const crypto = require("crypto");
 const { cmd } = require("../command");
 
@@ -56,7 +62,7 @@ cmd({
 
     // Send the message with the generated password
     await conn.sendMessage(from, {
-      text: "🔐 *Your Strong Password* 🔐\n\nPlease find your generated password below:\n\n" + generatedPassword + "\n\n*Powered By JawadTechX*"
+      text: "🔐 *Your Strong Password* 🔐\n\nPlease find your generated password below:\n\n" + generatedPassword + "\n\n*Powered By loku nima*"
     }, {
       quoted: quoted
     });

@@ -1,5 +1,7 @@
-// Jawad TechX - KHAN MD 
-// Dont Remove Credit From File 
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488// 
+
+
 
 const { cmd } = require("../command");
 

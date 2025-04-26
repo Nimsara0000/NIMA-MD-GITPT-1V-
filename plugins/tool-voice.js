@@ -1,3 +1,8 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
 const { cmd } = require('../command');
 const axios = require('axios');
 
@@ -73,7 +78,7 @@ async (conn, mek, m, {
 
         // Send menu message with image
         const sentMsg = await conn.sendMessage(from, {  
-            image: { url: "https://files.catbox.moe/7zfdcq.jpg" },
+            image: { url: "https://files.catbox.moe/60dfx8.jpg" },
             caption: menuText
         }, { quoted: m });
 

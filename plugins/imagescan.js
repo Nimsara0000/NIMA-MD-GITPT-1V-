@@ -1,3 +1,9 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
+
 const axios = require("axios");
 const FormData = require('form-data');
 const fs = require('fs');
@@ -75,7 +81,7 @@ cmd({
     await reply(
       `🔍 *Image Analysis Results*\n\n` +
       `${scanResponse.data.result}\n\n` +
-      `> © Powered by JawadTechX 💜`
+      `> © Powered by loku nima 💜`
     );
 
   } catch (error) {

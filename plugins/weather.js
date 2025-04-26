@@ -1,3 +1,9 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
+
 const axios = require('axios');
 const config = require('../config');
 const { cmd, commands } = require('../command');
@@ -28,7 +34,7 @@ async (conn, mek, m, { from, q, reply }) => {
 > 💨 *Wind Speed*: ${data.wind.speed} m/s
 > 🔽 *Pressure*: ${data.main.pressure} hPa
 
-> *© Powdered By JawadTechX*
+> *© Powdered By loku nima*
 `;
         return reply(weather);
     } catch (e) {

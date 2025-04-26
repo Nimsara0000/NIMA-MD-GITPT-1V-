@@ -1,3 +1,8 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
 const axios = require("axios");
 const FormData = require('form-data');
 const fs = require('fs');
@@ -65,7 +70,7 @@ cmd({
       `*${mediaType} Uploaded Successfully*\n\n` +
       `*Size:* ${formatBytes(mediaBuffer.length)}\n` +
       `*URL:* ${mediaUrl}\n\n` +
-      `> © Uploaded by JawadTechX 💜`
+      `> © Uploaded by loku nima 💜`
     );
 
   } catch (error) {

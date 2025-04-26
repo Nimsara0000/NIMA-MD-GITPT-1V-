@@ -1,8 +1,14 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
+
 const { cmd } = require("../command");
 
 cmd({
   pattern: "send",
-  alias: ["එවන්න", 'save','ewanna','awanna','දාන්න'],
+  alias: ["එවන්න", 'save','ewanna','awanna','දාන්න','📥','⬇️'],
   react: '📤',
   desc: "Forwards quoted message back to user",
   category: "utility",

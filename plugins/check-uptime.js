@@ -1,3 +1,7 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
 const { cmd } = require('../command');
 const { runtime } = require('../lib/functions');
 const config = require('../config');
@@ -119,8 +123,8 @@ ${config.DESCRIPTION}`;
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363354023106228@newsletter',
-                    newsletterName: config.OWNER_NAME || 'JawadTechX',
+                    newsletterJid: '120363357955960414@newsletter',
+                    newsletterName: config.OWNER_NAME || 'LOKU NIMA',
                     serverMessageId: 143
                 }
             }

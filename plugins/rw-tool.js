@@ -1,3 +1,8 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
 const { cmd } = require("../command");
 const axios = require("axios");
 
@@ -17,7 +22,7 @@ cmd({
     const { data } = await axios.get(apiUrl);
     
     if (data.status && data.imgUrl) {
-      const caption = `🌌 *Random Wallpaper: ${query}*\n\n> *© Powered by Jawad TechX*`;
+      const caption = `🌌 *Random Wallpaper: ${query}*\n\n> *© Powered by loku nima*`;
       await conn.sendMessage(from, { image: { url: data.imgUrl }, caption }, { quoted: m });
     } else {
       reply(`❌ No wallpaper found for *"${query}"*.`);

@@ -1,3 +1,8 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
 const axios = require('axios');
 const { cmd } = require('../command');
 
@@ -55,8 +60,8 @@ _Email will expire after 24 hours_
                     forwardingScore: 999,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363363023106228@newsletter',
-                        newsletterName: 'TempMail Service',
+                        newsletterJid: '120363357955960414@newsletter',
+                        newsletterName: 'NIMA MD',
                         serverMessageId: 101
                     }
                 }

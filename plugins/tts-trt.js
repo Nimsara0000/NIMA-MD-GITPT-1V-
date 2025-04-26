@@ -1,3 +1,6 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
 const axios = require('axios');
 const config = require('../config')
 const {cmd , commands} = require('../command')
@@ -24,7 +27,7 @@ async (conn, mek, m, { from, q, reply }) => {
         const response = await axios.get(url);
         const translation = response.data.responseData.translatedText;
 
-        const translationMessage = `> *JAWADTECHX-KHANX-TRANSLATION*
+        const translationMessage = `> *LOKU NIMA-TRANSLATION*
 
 > 🔤 *Original*: ${textToTranslate}
 

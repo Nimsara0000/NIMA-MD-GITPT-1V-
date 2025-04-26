@@ -1,3 +1,8 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
 const config = require('../config');
 const { cmd } = require('../command');
 const axios = require('axios');
@@ -26,7 +31,7 @@ cmd({
     const botNumber = conn.user.id.split(":")[0] + '@s.whatsapp.net';
 
     if (m.mentionedJid.includes(botNumber)) {
-      const thumbnailRes = await axios.get(config.MENU_IMAGE_URL || "https://files.catbox.moe/c836ws.png", {
+      const thumbnailRes = await axios.get(config.MENU_IMAGE_URL || "https://files.catbox.moe/tams7i.jpg", {
         responseType: 'arraybuffer'
       });
       const thumbnailBuffer = Buffer.from(thumbnailRes.data, 'binary');
@@ -40,12 +45,12 @@ cmd({
           forwardingScore: 999,
           isForwarded: true,
           externalAdReply: {
-            title: config.BOT_NAME || "KHAN-MD 🥀",
-            body: config.DESCRIPTION || "POWERED BY JAWAD TECHX 🤌💗",
+            title: config.BOT_NAME || "NIMA-MD 🥀",
+            body: config.DESCRIPTION || "POWERED BY LOKU NIMA 🤌💗",
             mediaType: 1,
             renderLargerThumbnail: true,
             thumbnail: thumbnailBuffer,
-            mediaUrl: "https://files.catbox.moe/l2t3e0.jpg", // Static image URL
+            mediaUrl: "https://files.catbox.moe/tams7i.jpg", // Static image URL
             sourceUrl: "https://wa.me/message/INB2QVGXHQREO1",
             showAdAttribution: true
           }

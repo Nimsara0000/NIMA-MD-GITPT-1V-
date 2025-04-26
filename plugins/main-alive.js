@@ -1,3 +1,9 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
+
 const { cmd } = require('../command');
 const os = require("os");
 const { runtime } = require('../lib/functions');
@@ -35,8 +41,8 @@ async (conn, mek, m, { from, sender, reply }) => {
                 forwardingScore: 1000,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363354023106228@newsletter',
-                    newsletterName: 'JawadTechX',
+                    newsletterJid: '120363357955960414@newsletter',
+                    newsletterName: 'LOKU NIMA',
                     serverMessageId: 143
                 }
             }

@@ -1,3 +1,9 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
+
 const { fetchJson } = require("../lib/functions");
 const { downloadTiktok } = require("@mrnima/tiktok-downloader");
 const { facebook } = require("@mrnima/facebook-downloader");

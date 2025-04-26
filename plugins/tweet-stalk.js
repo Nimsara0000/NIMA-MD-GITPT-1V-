@@ -1,3 +1,10 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
+
+
 const { cmd } = require('../command');
 const axios = require('axios');
 
@@ -38,7 +45,7 @@ cmd({
       + `┃📅 *Joined:* ${user.created}\n`
       + `┃🔗 *Profile:* [Click Here](${user.url})\n`
       + `╰━━━⪼\n\n`
-      + `🔹 *Powered BY JawadTechX*`;
+      + `🔹 *Powered BY loku nima*`;
 
     await conn.sendMessage(from, {
       image: { url: user.avatar },

@@ -1,3 +1,8 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
 const config = require('../config')
 const { cmd, commands } = require('../command')
 const { runtime } = require('../lib/functions')
@@ -73,7 +78,7 @@ cmd({
         await conn.sendMessage(
             from,
             {
-                image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/7zfdcq.jpg' },
+                image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/tams7i.jpg' },
                 caption: menuText,
                 contextInfo: {
                     mentionedJid: [m.sender],

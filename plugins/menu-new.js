@@ -1,3 +1,7 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
 const config = require('../config');
 const { cmd, commands } = require('../command');
 const { runtime } = require('../lib/functions');
@@ -76,7 +80,7 @@ cmd({
             try {
                 await new Promise(resolve => setTimeout(resolve, 1000)); // Small delay after image
                 await conn.sendMessage(from, {
-                    audio: { url: 'https://files.catbox.moe/wtpcbo.mp3' },
+                    audio: { url: 'https://files.catbox.moe/ipnctb.mp3' },
                     mimetype: 'audio/mp4',
                     ptt: true,
                 }, { quoted: mek });
@@ -115,7 +119,7 @@ cmd({
         // Menu data (complete version)
         const menuData = {
             '1': {
-                title: "📥 *Download Menu* 📥",
+                title: "📥 *Nima Download Menu* 📥",
                 content: `╭━━━〔 *Download Menu* 〕━━━┈⊷
 ┃★╭──────────────
 ┃★│ 🌐 *Social Media*

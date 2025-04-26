@@ -1,3 +1,8 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
 const { sleep } = require('../lib/functions');
 const {cmd , commands} = require('../command')
 

@@ -1,3 +1,9 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
+
 const { cmd } = require("../command");
 const axios = require('axios');
 const fs = require('fs');
@@ -16,24 +22,24 @@ cmd({
     if (!isOwner) return reply("This command is only for the bot owner.");
 
     try {
-        await reply("🔍 Checking for KHAN-MD updates...");
+        await reply("🔍 Checking for NIMA-MD updates...");
 
         // Fetch the latest commit hash from GitHub
-        const { data: commitData } = await axios.get("https://api.github.com/repos/XdTechPro/KHAN-MD/commits/main");
+        const { data: commitData } = await axios.get("https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-/main");
         const latestCommitHash = commitData.sha;
 
         // Get the stored commit hash from the database
         const currentHash = await getCommitHash();
 
         if (latestCommitHash === currentHash) {
-            return reply("✅ Your KHAN-MD bot is already up-to-date!");
+            return reply("✅ Your NIMA-MD bot is already up-to-date!");
         }
 
-        await reply("🚀 Updating KHAN-MD Bot...");
+        await reply("🚀 Updating NIMA MD Bot...");
 
         // Download the latest code
         const zipPath = path.join(__dirname, "latest.zip");
-        const { data: zipData } = await axios.get("https://github.com/XdTechPro/KHAN-MD/archive/main.zip", { responseType: "arraybuffer" });
+        const { data: zipData } = await axios.get("https://github.com/Nimsara0000/NIMA-MD-GITPT-1V-/archive/main.zip", { responseType: "arraybuffer" });
         fs.writeFileSync(zipPath, zipData);
 
         // Extract ZIP file
@@ -44,7 +50,7 @@ cmd({
 
         // Copy updated files, preserving config.js and app.json
         await reply("🔄 Replacing files...");
-        const sourcePath = path.join(extractPath, "KHAN-MD-main");
+        const sourcePath = path.join(extractPath, "NIMA-MD-main");
         const destinationPath = path.join(__dirname, '..');
         copyFolderSync(sourcePath, destinationPath);
 

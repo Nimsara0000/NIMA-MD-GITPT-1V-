@@ -1,3 +1,8 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
 const { cmd } = require('../command');
 
 cmd({
@@ -17,7 +22,7 @@ async (conn, mek, m, {
         }
 
         const steps = [
-            '💻 *HACK STARTING...* 💻',
+            '💻 *NIMA HACK STARTING...* 💻',
             
             '*Initializing hacking tools...* 🛠️',
             '*Connecting to remote servers...* 🌐',
@@ -43,7 +48,7 @@ async (conn, mek, m, {
             '⚠️ *Note:* All actions are for demonstration purposes only.',
             '⚠️ *Reminder:* Ethical hacking is the only way to ensure security.',
             
-            '> *KHAN-MD-HACKING-COMPLETE ☣*'
+            '> *NIMA-MD-HACKING-COMPLETE ☣*'
         ];
 
         for (const line of steps) {

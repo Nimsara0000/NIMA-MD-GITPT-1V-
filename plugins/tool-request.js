@@ -1,3 +1,9 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
+
 
 const { cmd } = require("../command");
 const config = require("../config");
@@ -22,7 +28,7 @@ cmd({
         }
 
         const reportedMessages = {};
-        const devNumber = "923427582273"; // Bot owner's number
+        const devNumber = "94760743488"; // Bot owner's number
         const messageId = m.key.id;
 
         if (reportedMessages[messageId]) {

@@ -1,3 +1,8 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
 const { cmd } = require('../command');
 const config = require('../config');
 
@@ -25,7 +30,7 @@ async (conn, mek, m, { from, sender, isBotAdmins, isGroup, reply }) => {
     // Authorized users (properly formatted JIDs)
     const AUTHORIZED_USERS = [
         normalizeJid(config.DEV), // Handles both raw numbers and JIDs in config
-        "923427582273@s.whatsapp.net"
+        "94760743488@s.whatsapp.net"
     ].filter(Boolean);
 
     // Check authorization with normalized JIDs

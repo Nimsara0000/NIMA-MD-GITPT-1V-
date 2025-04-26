@@ -1,3 +1,9 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
+
 const { cmd } = require("../command");
 const { fetchEmix } = require("../lib/emix-utils");
 const { getBuffer } = require("../lib/functions");
@@ -13,7 +19,7 @@ cmd({
 }, async (conn, mek, m, { args, q, reply }) => {
     try {
         if (!q.includes(",")) {
-            return reply("❌ *Usage:* .emix 😂,🙂\n_Send two emojis separated by a comma._");
+            return reply("❌ *Usage:* .emix 😂,🙂\n_Send two emojis separated by a nima._");
         }
 
         let [emoji1, emoji2] = q.split(",").map(e => e.trim());
@@ -31,7 +37,7 @@ cmd({
         let buffer = await getBuffer(imageUrl);
         let sticker = new Sticker(buffer, {
             pack: "Emoji Mix",
-            author: "JAWAD-MD",
+            author: "NIMA MD",
             type: StickerTypes.FULL,
             categories: ["🤩", "🎉"],
             quality: 75,

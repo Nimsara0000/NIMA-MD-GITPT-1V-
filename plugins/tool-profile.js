@@ -1,3 +1,9 @@
+//COD BY LOKU NIMA NIMA MD 1V 2025//
+//MY CONTACT NO 94769091078,94760743488//
+
+
+
+
 const { cmd } = require('../command');
 const { getBuffer, fetchJson } = require('../lib/functions');
 
@@ -92,7 +98,7 @@ async (conn, mek, m, { from, sender, isGroup, reply, quoted, participants }) => 
             "No bio available";
 
         const userInfo = `
-*GC MEMBER INFORMATION 🧊*
+*NIMA MEMBER INFORMATION 🧊*
 
 📛 *Name:* ${userName}
 🔢 *Number:* ${userJid.replace(/@.+/, '')}
